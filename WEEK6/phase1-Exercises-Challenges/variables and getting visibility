@@ -1,0 +1,32 @@
+//Exercise 1
+//In the node REPL (type node in terminal), declare two variables — a with value 4 and b with value 6.
+//Using console.log, print the result of:
+//a + b (should print 10)
+//a * b (should print 24)
+
+//Welcome to Node.js v20.2.0.
+//Type ".help" for more information.
+//> a = 4
+//4
+//> a = 4; b = 6 
+//6
+//> console.log(a + b )
+//10
+//undefined
+//> console.log(a * b);
+//24
+
+//Can you find the problem in the following program? Make the fix, so the code prints "Hello Makers" when run into node.
+
+//const greeting = 'Hello ';
+//const name = 'Makers';
+
+//> console.log greeting + name;
+//console.log(greeting + name);
+            ^^^^^^^^
+
+//Uncaught SyntaxError: Unexpected identifier 'greeting'
+
+//greeting has already been declared (it's a constant variable), to fix the issue
+//we would have to type 
+//console.log(greeting + name ); this will print Hello Makers

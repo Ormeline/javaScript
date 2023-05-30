@@ -1,0 +1,15 @@
+//functions and callbacks
+// const getName = () => {
+//     return 'Michael';
+// }
+
+const printHello = () => {
+    console.log("Hello");
+  };
+  
+  const executeAfterDelay = (delay, callbackFunction) => {
+    setTimeout(callbackFunction, delay * 1000); //the executeAfterDelay function is defined, which takes a delay parameter (in seconds) and a callbackFunction parameter. It uses setTimeout to execute the callbackFunction after the specified delay (multiplied by 1000 to convert it to milliseconds).
+  };
+  
+  executeAfterDelay(5, printHello); // After 5 seconds, it will print "Hello" in the console
+  
