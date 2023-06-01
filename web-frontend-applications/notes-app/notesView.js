@@ -24,8 +24,12 @@ class NotesView {
     
   // Method to display notes
   displayNotes() {
-    // Get the notes from the model
-    const notes = this.model.getNotes();
+    // Remove all te prevoius notes 
+    document.querySelectorAll('.note').forEach(element => {
+      element.remove();
+    });
+
+    const notes = this.model.getNotes()
   
     // For each note, create and append a new element to the main container
     notes.forEach(note => {
